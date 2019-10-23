@@ -1,0 +1,500 @@
+\documentclass [aspectratio=169]{beamer}
+\usepackage{graphics}
+\mode<presentation>
+{
+  \usetheme{metropolis}
+  %\usecolortheme{dove}
+%  \setbeamercovered{transparent}
+}
+\usepackage[autoplay,loop]{animate}
+%\usepackage[orientation=landscape, size =a0, scale=2.0]{beamerposter}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{tikz}
+\usepackage[english]{babel}
+\usepackage{fancybox}
+\usepackage{braket}
+\usepackage[utf8]{inputenc}
+\usepackage{rotating}
+\usepackage{enumerate}
+\usepackage{blindtext}
+\newcommand{\iu}{{i\mkern1mu}}
+%\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage[labelformat=empty]{caption}
+\usepackage[export]{adjustbox}
+\usepackage{color}
+\usepackage[abs]{overpic}
+\usepackage{pict2e}
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+
+\titlegraphic{\includegraphics[width=3cm]{images/ND_logo}\hspace*{8cm}~%
+   \includegraphics[width=3cm]{images/isnap_logo}
+}
+
+\title{Chiral Wobbling in $^{135}$Pr}
+
+\author{Nirupama Sensharma \\ 
+Fall Meeting of the Division of Nuclear Physics of the American Physical Society}
+\date{October 16, 2019}
+\institute{University of Notre Dame}
+
+
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Nuclear Shapes}
+\centering
+\vspace{-8pt}
+\Ovalbox{Prolate} \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \Ovalbox{Spherical} \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \Ovalbox{Oblate}
+\begin{figure}
+\vspace{-16pt}
+\includegraphics[width=0.8\textwidth]{images/shapes.pdf}\\
+\vspace{-5pt}
+\hspace{-27pt}
+\includegraphics[width=0.14\textwidth]{images/triaxial.pdf}
+\hspace{50pt}
+\includegraphics[width=0.20\textwidth]{images/ellipsoid.pdf}
+\end{figure}
+\vspace{-84pt}
+\hspace{250pt}
+\Ovalbox{Triaxial}
+\end{frame}
+
+\begin{frame}{Triaxial Region}
+\centering
+Triaxiality - A rare phenomenon!\\
+\scriptsize{\color{violet}P. M\"{o}ller et. al. PRL 97, 162502 (2006)}
+\begin{figure}
+\includegraphics[width=0.6\textwidth]{images/triaxial_chart.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Wobbling - Unique fingerprint of Triaxiality (1/2)}
+\begin{multicols}{2}
+\begin{itemize}
+\item {Harmonic oscillation of one of the principal axes about the space fixed \textbf{$\vec{J}$}.}
+\item {Analog of the spinning motion of an asymmetric top.}
+\item {For odd-A nuclei:}
+\begin{itemize}
+\item{Odd particle aligns with m-axis - Longitudinal wobbling}
+\item{Odd particle aligns $\perp$ to m-axis - Transverse wobbling}
+\end{itemize}
+\end{itemize}
+\begin{center}
+\begin{figure}
+\animategraphics[height=2in, autoplay]{10}{animation/long_wobb-}{0}{119}
+\end{figure}
+\scriptsize{\color{violet} Animation courtesy - J. T. Matta} 
+\end{center}
+\end{multicols}
+\end{frame}
+
+\begin{frame}{Wobbling - Unique fingerprint of Triaxiality (1/2)}
+\begin{columns}[c]
+\begin{column}{0.5\textwidth}
+\begin{center}
+\begin{figure}
+\includegraphics[width=1.05\textwidth]{images/wobb.pdf}
+\end{figure}
+\end{center}
+\end{column}
+\begin{column}{0.5\textwidth}
+\textbf{Standard fingerprints for Wobbling bands:}
+\begin{itemize}
+\item{Rotational bands corresponding to n$_{w}$ = 0, 1, 2, ....}
+\item{Transitions from n$_{w+1} \rightarrow$ n$_{w}$ ($\Delta$n$_{w}$ = +1)}
+\item{Interband Transitions are $\Delta\mathrm{I}$ = 1, E2}
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Chirality - Unique fingerprint of Triaxiality (2/2)}
+\vspace{-10pt}
+\begin{center}
+\begin{figure}
+\animategraphics[height=1.3in, autoplay]{10}{animation/chiral-}{0}{204}
+\end{figure}
+\scriptsize{\color{violet} Animation courtesy - X. H. Wu} 
+\end{center}
+\begin{itemize}
+\item{Axis of rotation lies outside all of the three principal planes of the nucleus.}
+\item{High-\textbf{$j$} particles align with the s-axis, high-\textbf{$j$} holes align with the l-axis and the triaxial core rotates about the m-axis.}
+\item{This arrangement breaks the time-reversal symmetry.}
+%\item{\textbf{$\vec{J}$} points outside all of the principal planes.}
+\item{The system is R.H. if the s-, m- and l-axes are ordered counterclockwise w.r.t \textbf{$\vec{J}$} and L.H. otherwise.}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Chirality - Unique fingerprint of Triaxiality (2/2)}
+\begin{columns}[c]
+\begin{column}{0.5\textwidth}
+\begin{center}
+\begin{figure}
+\includegraphics[width=1.05\textwidth]{images/chiral.pdf}
+\end{figure}
+\end{center}
+\end{column}
+\begin{column}{0.5\textwidth}
+\textbf{Standard fingerprints for Chiral bands:}
+\begin{itemize}
+\item{Opposite chirality bands - Two $\Delta$I = 1 bands of same parity}
+\item{Close excitation energies}
+\item{Constant staggering parameter}
+\item{Identical B(M1)/B(E2) ratios}
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Level Scheme of $^{135}$Pr}
+\begin{overpic}[scale=0.48,unit=1mm]{images/135Pr_1phonon.pdf}
+    \put(-3.5,75){\textbf{\textit{\color{orange}What we know so far ...}}}
+    \put(90,20){\color{magenta}J. T Matta et al., PRL 114,}
+    \put(90,15){\color{magenta}082501 (2015)}
+\end{overpic}
+\end{frame}
+
+\begin{frame}{Experimental Details (1/2)}
+\begin{multicols}{2}
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{images/gammasphere.jpg}
+\end{figure}
+\begin{itemize}
+\item{Experiment performed using the Gammasphere facility at Argonne National Laboratory.}
+\item{Reaction used: $^{123}$Sb($^{16}$O,4n)$^{135}$Pr at 80 MeV.}
+\item{83 compton suppressed HpGe detectors used.}
+\item{No. of three- and higher-fold $\gamma$-ray coincidence events $\approx$ 1.5 $\times$ 10$^{10}$.}
+\end{itemize}
+\end{multicols}
+\end{frame}
+
+\begin{frame}{Level Scheme of $^{135}$Pr (cont.)}
+\begin{overpic}[scale=0.475,unit=1mm]{images/135Pr_2phonon.pdf}
+    \put(-3.5,73){\textbf{\textit{\color{orange}What we know so far ...}}}
+    \put(100,70){\small \color{magenta}J. T Matta et al., PRL 114,}
+    \put(100,65){\small \color{magenta}082501 (2015)}
+    \put(118,35){\small \color{cyan}N. Sensharma et al.,}    
+    \put(117,30){\small \color{cyan}PLB 792, 170 (2019)}
+\end{overpic}
+\end{frame}
+
+%\begin{frame}{Transverse Wobbling in $^{135}$Pr}
+%\begin{columns}[c]
+%\begin{column}{0.4\textwidth}
+%\vspace{20pt}
+%\begin{overpic}[scale=0.55,unit=1mm]{images/trans_wobb.pdf}
+ %   \put(35,65){\color{magenta}l - long axis}
+  %  \put(35,60){\color{magenta}m - medium axis}
+   % \put(35,55){\color{magenta}s - small axis}
+%\end{overpic}
+%\end{column}
+%\begin{column}{0.6\textwidth}
+%\begin{itemize}
+%\item{Odd h$_{11/2}$ proton particle aligns with the s-axis.}
+%\item{Collective $\vec{R}$ precesses around the s-axis.}
+%\item{Decreasing E$_\text{wobb}$ - \textit{Transverse wobbling}.}
+%\end{itemize}
+%\vspace{-10pt}
+%\begin{figure}
+%\includegraphics[width=0.8\textwidth]{images/wobb_ene.pdf}
+%\end{figure}
+%\end{column}
+%\end{columns}
+%\end{frame}
+
+\begin{frame}{Level Scheme of $^{135}$Pr (cont.)}
+\centering
+\begin{overpic}[scale=0.45,unit=1mm]{images/135Pr_dipole_old.pdf}
+    \put(80,72){\textbf{\color{teal}Another Dipole Band}}
+\end{overpic}
+\end{frame}
+
+\begin{frame}{Level Scheme of $^{135}$Pr (cont.)}
+\centering
+\begin{overpic}[scale=0.45,unit=1mm]{images/135Pr_dipole_old.pdf}
+    \put(80,72){\textbf{\color{teal}Another Dipole Band}}
+    \put(105,50){\color{magenta}Origin?}
+\end{overpic}
+\end{frame}
+
+\begin{frame}{Level Scheme of $^{135}$Pr (cont.)}
+\centering
+\begin{overpic}[scale=0.45,unit=1mm]{images/135Pr_dipole_old.pdf}
+    \put(80,72){\textbf{\color{teal}Another Dipole Band}}
+    \put(105,50){\color{magenta}Origin?}
+    \put(103,40){\color{magenta}Any linking}
+    \put(103,35){\color{magenta}transitions?}
+\end{overpic}
+\end{frame}
+
+\begin{frame}{Level Scheme of $^{135}$Pr (cont.)}
+\centering
+\begin{overpic}[scale=0.45,unit=1mm]{images/135Pr_dipole_old.pdf}
+    \put(80,72){\textbf{\color{teal}Another Dipole Band}}
+    \put(105,50){\color{magenta}Origin?}
+    \put(103,40){\color{magenta}Any linking}
+    \put(103,35){\color{magenta}transitions?}
+    \put(88,20){\color{magenta}Transition probability}
+    \put(95,15){\color{magenta}ratios?}
+\end{overpic}
+\end{frame}
+
+\begin{frame}{Level Scheme of $^{135}$Pr (cont.)}
+\centering
+\begin{overpic}[scale=0.45,unit=1mm]{images/135Pr_dipole_old.pdf}
+    \put(80,72){\textbf{\color{teal}Another Dipole Band}}
+    \put(105,50){\color{magenta}Origin?}
+    \put(103,40){\color{magenta}Any linking}
+    \put(103,35){\color{magenta}transitions?}
+    \put(88,20){\color{magenta}Transition probability}
+    \put(95,15){\color{magenta}ratios?}
+    \put(75,5){\textbf{\color{orange}Insufficient statistics}}
+\end{overpic}
+\end{frame}
+
+\begin{frame}{Experimental Details (2/2)}
+\begin{multicols}{2}
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{images/gammasphere.jpg}
+\end{figure}
+\begin{itemize}
+\item{Experiment repeated using the Gammasphere facility at Argonne National Laboratory.}
+\item{Same reaction, energy and similar targets as previous experiment.}
+\item{63 compton suppressed HpGe detectors used.}
+\item{Both datasets added together.}
+\item{Total no. of three- and higher-fold $\gamma$-ray coincidence events $\approx$ 2.5 $\times$ 10$^{10}$.}
+\end{itemize}
+\end{multicols}
+\end{frame}
+
+\begin{frame}{Level Scheme of $^{135}$Pr (cont.)}
+\centering
+\begin{overpic}[scale=0.45,unit=1mm]{images/135Pr_dipole_new.pdf}
+    \put(70,72){\textbf{\color{orange}(With increased statistics)}}
+\end{overpic}
+\end{frame}
+
+\begin{frame}{Level Scheme of $^{135}$Pr (cont.)}
+\centering
+\begin{overpic}[scale=0.45,unit=1mm]{images/135Pr_dipole_new.pdf}
+    \put(70,72){\textbf{\color{orange}(With increased statistics)}}
+    \put(100,50){\color{magenta}Three linking}
+    \put(100,45){\color{magenta}transitions}
+\end{overpic}
+\end{frame}
+
+\begin{frame}{Level Scheme of $^{135}$Pr (cont.)}
+\centering
+\begin{overpic}[scale=0.45,unit=1mm]{images/135Pr_dipole_new.pdf}
+    \put(70,72){\textbf{\color{orange}(With increased statistics)}}
+    \put(100,50){\color{magenta}Three linking}
+    \put(100,45){\color{magenta}transitions}
+    \put(100,30){\color{cyan}Could these be}
+    \put(100,25){\color{cyan}Chiral}
+    \put(100,20){\color{cyan}Partners??}
+\end{overpic}
+\end{frame}
+
+\begin{frame}{Level Scheme of $^{135}$Pr (cont.)}
+\centering
+\begin{overpic}[scale=0.45,unit=1mm]{images/135Pr_dipole_new.pdf}
+    \put(70,72){\textbf{\color{orange}(With increased statistics)}}
+    \put(100,50){\color{magenta}Three linking}
+    \put(100,45){\color{magenta}transitions}
+    \put(100,30){\color{cyan}Could these be}
+    \put(100,25){\color{cyan}Chiral}
+    \put(100,20){\color{cyan}Partners??}
+    \put(72,10){\color{magenta}Sufficient statistics to perform}
+    \put(80,5){\color{magenta}angular distributions}
+\end{overpic}
+\end{frame}
+
+\begin{frame}{Angular Distributions (1/4)}
+\begin{figure}
+\includegraphics[width=0.32\textwidth]{/home/niru/angdis_plots/135Pr_combined/335.pdf}
+\includegraphics[width=0.32\textwidth]{/home/niru/angdis_plots/135Pr_combined/385.pdf}
+\includegraphics[width=0.32\textwidth]{/home/niru/angdis_plots/135Pr_combined/429.pdf}
+\end{figure}
+\begin{figure}
+\includegraphics[width=0.32\textwidth]{/home/niru/angdis_plots/135Pr_combined/424.pdf}
+\includegraphics[width=0.32\textwidth]{/home/niru/angdis_plots/135Pr_combined/498.pdf}
+\includegraphics[width=0.32\textwidth]{/home/niru/angdis_plots/135Pr_combined/555.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Other parameters}
+\begin{center}
+\begin{multicols}{3}
+\begin{figure}
+\includegraphics[width=0.33\textwidth]{images/trans_prob.pdf}
+\end{figure}
+\begin{figure}
+\includegraphics[width=0.33\textwidth]{images/energy_exp.pdf}
+\end{figure}
+\begin{figure}
+\includegraphics[width=0.34\textwidth]{images/stag_exp.pdf}
+\end{figure}
+\end{multicols}
+\color{violet} Reduced transition \hspace{55pt} Excitation Energy \hspace{45pt} Staggering Parameter
+\end{center}
+\vspace{-20pt}\color{violet} Probability ratios
+\end{frame}
+
+\begin{frame}{Angular Distributions (2/4)}
+\begin{columns}[c]
+\begin{column}{0.6\textwidth}
+\begin{center}
+\Ovalbox{\textbf{E$_{\gamma}$ = 641.8 keV}}
+\begin{figure}
+\includegraphics[width=0.9\textwidth]{images/643.pdf}
+\end{figure}
+\end{center}
+\end{column}
+\begin{column}{0.4\textwidth}
+\begin{center}
+\textbf{$\delta$ = -2.92$^{{+{0.12}}}_{{-{0.13}}}$ \\~\\
+E2\% = 89.5$^{{+{0.8}}}_{{-{0.8}}}$}
+\begin{figure}
+\includegraphics[width=\textwidth]{images/dipole_643.pdf}
+\end{figure}
+\end{center}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Angular Distributions (3/4)}
+\begin{columns}[c]
+\begin{column}{0.6\textwidth}
+\begin{center}
+\Ovalbox{\textbf{E$_{\gamma}$ = 572.2 keV}}
+\begin{figure}
+\includegraphics[width=0.9\textwidth]{images/572.pdf}
+\end{figure}
+\end{center}
+\end{column}
+\begin{column}{0.4\textwidth}
+\begin{center}
+\textbf{$\delta$ = -3.31$^{{+{0.16}}}_{{-{0.18}}}$ \\~\\
+E2\% = 91.6$^{{+{0.8}}}_{{-{0.8}}}$}
+\begin{figure}
+\includegraphics[width=\textwidth]{images/dipole_572.pdf}
+\end{figure}
+\end{center}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Angular Distributions (4/4)}
+\begin{columns}[c]
+\begin{column}{0.6\textwidth}
+\begin{center}
+\Ovalbox{\textbf{E$_{\gamma}$ = 476.6 keV}}
+\begin{figure}
+\includegraphics[width=0.9\textwidth]{images/476.pdf}
+\end{figure}
+\end{center}
+\end{column}
+\begin{column}{0.4\textwidth}
+\begin{center}
+\textbf{$\delta$ = -3.68$^{{+{0.34}}}_{{-{0.39}}}$ \\~\\
+E2\% = 93.1$^{{+{1.2}}}_{{-{1.3}}}$}
+\begin{figure}
+\includegraphics[width=\textwidth]{images/dipole_476.pdf}
+\end{figure}
+\end{center}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Level Scheme of $^{135}$Pr (cont.)}
+\begin{overpic}[scale=0.45,unit=1mm]{images/135Pr_dipole_new.pdf}
+    \put(110,70){\color{magenta}Two $\Delta$I = 1 bands}
+    \put(110,60){\color{magenta}Same parity}
+    \put(110,50){\color{magenta}Similar energies}
+    \put(100,40){\color{magenta}Nearly constant staggering}
+    \put(100,30){\color{magenta}Identical B(M1)/B(E2) ratios}
+    \put(95,20){\color{magenta}Pure M1 in-band transitions}
+    \put(80,10){\color{magenta}Highly mixed M1+E2 linking transitions}
+    \put(80,5){\textit{\color{magenta}(built on wobbling excitations)}}
+\end{overpic}
+\end{frame}
+
+\begin{frame}{Level Scheme of $^{135}$Pr (cont.)}
+\centering
+\begin{overpic}[scale=0.45,unit=1mm]{images/135Pr_dipole_new.pdf}
+    \put(90,70){\Large \color{cyan}Chiral Partners!}
+\end{overpic}
+\end{frame}
+
+\begin{frame}{Chiral Wobbling in $^{135}$Pr}
+\vspace{20pt}
+\begin{columns}[c]
+\begin{column}{0.5\textwidth}
+\begin{overpic}[scale=0.55,unit=1mm]{images/chiral_wobb.pdf}
+    \put(45,55){\color{magenta}l - long axis}
+    \put(45,50){\color{magenta}m - medium axis}
+    \put(45,45){\color{magenta}s - small axis}
+\end{overpic}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\item{Two additional h$_{11/2}$ neutron holes align along the l-axis.}
+\item{Net angular momentum generated in the s-l plane.}
+\item{Collective $\vec{R}$ precesses along this axis.}
+\item{Collective excitation of the wobbling type.}
+\end{itemize}
+\end{column}
+\end{columns} 
+\end{frame}
+
+\begin{frame}{Signatures of Chirality}
+Preliminary theoretical results
+\begin{itemize}
+\item{Close excitation energies}
+\item{Constant staggering parameter}
+\end{itemize}
+\begin{figure}
+\includegraphics[width=0.45\textwidth]{images/energy.pdf}
+\includegraphics[width=0.45\textwidth]{images/stag.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Conclusion and Future Work}
+\begin{itemize}
+\item{The phenomenon of chiral wobbling motion has been investigated in $^{135}$Pr.}
+\item{$^{135}$Pr - first possible case of \textit{Chiral wobbling}.}
+\item{High statistics angular distribution measurements performed.}
+\item{Ongoing analysis to extend the two dipole bands and find more connecting transitions.}
+\item{Calculations in the framework of the Particle Rotor Model (PRM) being done to affirm experimental observations.}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Acknowledgements}
+\begin{multicols}{2}
+\begin{itemize}
+\item{\small{University of Notre Dame} \\
+\textit{\scriptsize{\color{violet}U. Garg, S. Frauendorf, J. Arroyo, D. P. Burdette, J. L. Cozzi, K. B. Howard, S. Weyhmiller}}}
+\item{\small{Argonne National Laboratory} \\
+\textit{\scriptsize{\color{violet}S. Zhu, M. P. Carpenter, P. Copp, F. G. Kondev, J. Li, S. Stoltz, J. Wu}}}
+\item{\small{United States Naval Academy} \\
+\textit{\scriptsize{\color{violet}A. D. Ayangeakaa, D. J. Hartley}}}
+\item{\small{University of North Carolina} \\
+\textit{\scriptsize{\color{violet}R. V. F. Janssens}}}
+\item{\small{Physik-Department, Technische Universit\"{a}t M\"{u}nchen, D-85747 Garching, Germany} \\
+\textit{\scriptsize{\color{violet}Q. B. Chen}}}
+\item{\small{U.S. National Science Foundation} \textit{\scriptsize{\color{violet}[PHY-1713857 (UND), PHY-1559848 (UND), and PHY-1203100 (USNA)]}}}
+\end{itemize}
+\begin{figure}
+\includegraphics[width=0.55\textwidth]{images/logo.pdf}
+\end{figure}
+\end{multicols}
+\end{frame}
+
+
+\end{document}
