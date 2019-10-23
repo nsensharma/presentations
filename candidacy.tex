@@ -1,0 +1,860 @@
+\documentclass [11pt]{beamer}
+\usepackage{graphics}
+\mode<presentation>
+{
+  \usetheme{metropolis}
+  %\usecolortheme{dove}
+%  \setbeamercovered{transparent}
+}
+\usepackage[autoplay,loop]{animate}
+%\usepackage[orientation=landscape, size =a0, scale=2.0]{beamerposter}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{tikz}
+\usepackage[english]{babel}
+\usepackage{fancybox}
+\usepackage{braket}
+\usepackage[utf8]{inputenc}
+\usepackage{rotating}
+\usepackage{enumerate}
+\usepackage{blindtext}
+\newcommand{\iu}{{i\mkern1mu}}
+%\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage[labelformat=empty]{caption}
+\usepackage[export]{adjustbox}
+\usepackage{color}
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+
+\title{Two-phonon wobbling in $^{135}$Pr}
+\date{February 13, 2018}
+\author{Nirupama Sensharma}
+\institute{University of Notre Dame}
+
+
+\begin{document}
+
+\maketitle
+
+%\begin{frame}{Outline}
+ %\setbeamertemplate{section in toc}[sections numbered]
+ % \tableofcontents[hideallsubsections]
+%\end{frame}
+
+\section{Introduction}
+
+\begin{frame}{A Spherical nucleus}
+	\centering 
+\animategraphics[height=3.1in, autoplay]{10}{images/spherical-}{0}{59}  
+\\\tiny{\textit{Courtesy Dr. J. T. Matta}}
+\end{frame} 
+
+\begin{frame}
+\begin{center}
+\textbf{Bohr and Mottelson stated:}
+\end{center} 
+
+\textit{A common feature of systems that have rotational spectra is the existence of a 'deformation', by which is implied a feature of anisotropy that makes it possible to specify an orientation of the system as a whole.}\\
+\vspace{0.6in}
+\hspace{1.8in}
+{\tiny {\textbf{Nuclear Structure Volume II: Nuclear Deformations (1975)}}}
+
+\end{frame}	
+
+\begin{frame}{Deformed Nucleus}
+\begin{multicols}{2}
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{deformed.png}
+\end{figure}
+\begin{center}
+\begin{figure}
+\includegraphics[width=0.3\textwidth]{zero.png}
+\end{figure}
+\Ovalbox{Rotational Band}
+\end{center}
+\end{multicols}
+\end{frame}
+
+\begin{frame}{Deformed Nucleus}
+\begin{multicols}{2}
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{deformed.png}
+\end{figure}
+\begin{center}
+\begin{figure}
+\includegraphics[width=0.3\textwidth]{two.png}
+\end{figure}
+\Ovalbox{Rotational Band}
+\end{center}
+\end{multicols}
+\end{frame}
+
+\begin{frame}{Deformed Nucleus}
+\begin{multicols}{2}
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{deformed.png}
+\end{figure}
+\begin{center}
+\begin{figure}
+\includegraphics[width=0.2\textwidth]{four.png}
+\end{figure}
+\Ovalbox{Rotational Band}
+\end{center}
+\end{multicols}
+\end{frame}
+
+\begin{frame}{Deformed Nucleus}
+\begin{multicols}{2}
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{deformed.png}
+\end{figure}
+\begin{center}
+\begin{figure}
+\includegraphics[width=0.2\textwidth]{six.png}
+\end{figure}
+\Ovalbox{Rotational Band}
+\end{center}
+\end{multicols}
+\end{frame}
+
+%\begin{frame}{Deformed Nucleus}
+%\begin{multicols}{2}
+%\begin{figure}
+%\includegraphics[width=0.5\textwidth]{deformed.png}
+%\end{figure}
+%\begin{center}
+%\begin{figure}
+%\includegraphics[width=0.2\textwidth]{eight.png}
+%\end{figure}
+%\Ovalbox{Rotational Band}
+%\end{center}
+%\end{multicols}
+%\end{frame}
+
+\begin{frame}{Nuclear Shapes}
+\centering
+\Ovalbox{Prolate} \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \Ovalbox{Spherical} \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \Ovalbox{Oblate}
+\begin{figure}
+\includegraphics[width=\textwidth]{shapes.png}
+\end{figure}
+\begin{multicols}{2}
+\begin{figure}
+\includegraphics[width=0.25\textwidth]{triax}
+\end{figure}
+\Ovalbox{Triaxial Nucleus}
+\begin{figure}
+\includegraphics[width=0.28\textwidth]{ellipsoid.jpg}
+\end{figure}
+\end{multicols}
+\end{frame}
+
+\begin{frame}{Triaxial Region}
+\centering
+Triaxiality - A rare phenomenon!\\
+\tiny {P. M\"{o}ller et. al. PRL 97, 162502 (2006)}
+\begin{figure}
+\includegraphics[width=0.7\textwidth]{triaxial.png}
+\end{figure}
+\small {Predicted regions $\rightarrow Z = 60, N = 76$ and $Z = 46, N = 66$}
+\end{frame}
+
+\begin{frame}{Triaxiality - Fingerprints (1/2)}
+\vspace{-6pt}
+\textbf{\large \color{red} Chirality}
+\vspace{-6pt}
+\begin{center}
+\begin{figure}
+\includegraphics[width=0.35\textwidth]{chiral.png}
+\hspace{5pt}
+\includegraphics[width=0.5\textwidth]{ch.png}
+\end{figure}
+\end{center}
+\vspace{-7pt}
+\begin{itemize}
+\item {\textbf{$\vec{J}$} lies outside of all principal planes.}
+%\item {$\mathcal{T}R_{y}(\pi)$ symmetry broken.}
+\item {Two $\Delta\mathrm{I}$ = 1 bands of same parity with nearly same energy.}
+\item {Opposite chirality bands.}
+\end{itemize}
+\vspace{-4pt}
+\textbf{Standard fingerprints for chiral bands:}
+\begin{itemize}
+\item{Close excitation energies}
+\item{Constant Staggering parameter}
+\item{Identical B(M1)/B(E2) ratios}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Triaxiality - Fingerprints (2/2)}
+\vspace{-6pt}
+\textbf{\large \color{red} Wobbling}
+\vspace{-6pt}
+\begin{center}
+\begin{figure}
+\includegraphics[width=0.28\textwidth]{wobb.png}
+\hspace{15pt}
+\includegraphics[width=0.35\textwidth]{wobb.pdf}
+\end{figure}
+\end{center}
+\vspace{-7pt}
+\begin{itemize}
+\item {Analog of the spinning motion of an asymmetric top.}
+\item {Oscillation of a principal axis about the space fixed \textbf{$\vec{J}$}.}
+\end{itemize}
+\vspace{-4pt}
+\textbf{Standard fingerprints for Wobbling bands:}
+\begin{itemize}
+\item{Rotational bands corresponding to n$_{w}$ = 0, 1, 2, ....}
+\item{Transitions from n$_{w+1} \rightarrow$ n$_{w}$ ($\Delta$n$_{w}$ = +1)}
+\item{Interband Transitions are $\Delta\mathrm{I}$ = 1, E2} 
+\end{itemize}
+\end{frame}
+
+%\begin{frame}{Signatures of Wobbling bands}
+%\begin{itemize}
+%\item{Rotational bands corresponding to n$_{w}$ = 0, 1, 2, ....}
+%\item{Transitions from n$_{w+1} \rightarrow$ n$_{w}$ ($\Delta$n$_{w}$ = +1)}
+%\item{Interband Transitions are $\Delta\mathrm{I}$ = 1, E2} 
+%\end{itemize}
+%\end{frame}
+
+\begin{frame}{Previous cases of wobbling}{Discrepancies observed}
+\begin{multicols}{2}
+\begin{itemize}
+\item{Until 2015, only five wobblers discovered:  $^{161}$Lu, $^{163}$Lu, $^{165}$Lu, $^{167}$Lu and $^{167}$Ta.}
+\item{All in A$\sim$160 region.}
+\item{Wobbling energy (E\textsubscript{wobb})- energy associated with wobbling excitations.}
+\item{E\textsubscript{wobb} vs. spin - did not agree with the \textbf{Standard Wobbler} theory!}
+\end{itemize}
+\begin{figure}
+\includegraphics[width=0.4\textwidth]{prev_wobb.png}
+\end{figure}
+\end{multicols}
+\end{frame}
+
+\begin{frame}{Simple wobbler}
+\begin{columns}[c]
+\begin{column}{0.4\textwidth}
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{simple_wobb.png}
+\end{center}
+\end{figure}
+\end{column}
+\begin{column}{0.6\textwidth}
+\begin{itemize}
+\item{Wobbling motion in triaxial even-even nuclei.}
+\item{Moment of Inertia (MOI) order: $\mathcal{J}_{m}>\mathcal{J}_{s}>\mathcal{J}_{l}$}
+\item{Wobbling excitations - small amplitude oscillations of $\vec{J}$ about the m-axis.}
+\end{itemize}
+\end{column}
+\end{columns}
+\begin{align*}
+E(n_{w},\mathnormal{J}) = \frac{\hbar^{2}}{2\mathcal{J}_{1}}J(J+1) + (n_{w} + \frac{1}{2})\hbar\omega\textsubscript{wobb}
+\end{align*}
+\begin{align*}
+\space \space \space \space \hbar\omega\textsubscript{wobb} = \frac{J}{\mathcal{J}_{1}}\sqrt{\frac{(\mathcal{J}_{1}-\mathcal{J}_{2})(\mathcal{J}_{1}-\mathcal{J}_{3})}{\mathcal{J}_{2}\mathcal{J}_{3}}}
+\end{align*}
+\end{frame}
+
+\begin{frame}{Quasiparticle Triaxial Rotor (QTR) model}
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{quasi.png}
+\end{center}
+\end{figure}
+Triaxiality in odd-mass nuclei: High-j unpaired proton/neutron couples with the triaxial core $\implies$ Modified wobbling motion.
+\end{frame}
+
+\begin{frame}{Longitudinal Wobbler}{Types of Wobbling(1/2)}
+\begin{multicols}{2}
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.35\textwidth]{long_wobb.png}
+\end{center}
+\end{figure}
+\begin{itemize}
+\item{Odd-particle aligned with axis with max. MOI (m-axis).}
+\item{$\mathcal{J}_{3} > \mathcal{J}_{2}$ and $\mathcal{J}_{3} > \mathcal{J}_{1}$}
+\item{Longitudinal wobbling: \\ $\mathcal{J}_{3}$ = $\mathcal{J}_{m}$}
+\end{itemize}
+\end{multicols}
+\begin{center}
+%\begin{align*}
+%E\textsubscript{wobb}(\mathnormal{I}) = E(\mathnormal{I},n_{w}=1) - [E(\mathnormal{I}-1,n_{w}=0) + E(\mathnormal{I}+1,n_{w}=0)]/2
+%\end{align*}
+\begin{align*}
+\hbar \omega_{w} = \frac{j}{\mathcal{J}_{3}} \left[\left(1+ \frac{J}{j} \left( \frac{\mathcal{J}_{3}}{\mathcal{J}_{1}} -1 \right) \right) \left( 1+ \frac{J}{j} \left( \frac{\mathcal{J}_{3}}{\mathcal{J}_{2}} -1 \right)\right)\right]^{1/2}
+\end{align*}
+\end{center}
+$\implies$ E\textsubscript{wobb} increases with J.
+\begin{center}
+\Ovalbox{\small{S.Frauendorf and F.D\"{o}nau, Phys. Rev. C 89, 014322 (2014).}}
+\end{center}
+\end{frame}
+
+\begin{frame}{Transverse Wobbler}{Types of Wobbling(2/2)}
+\begin{multicols}{2}
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.35\textwidth]{trans_wobb.png}
+\end{center}
+\end{figure}
+\begin{itemize}
+\item{Odd-particle aligned perpendicular to axis with max. MOI (s- or l-axis).}
+\item{$\mathcal{J}_{3} < \mathcal{J}_{2}$ and $\mathcal{J}_{3} > \mathcal{J}_{1}$}
+\item{Transverse wobbling: \\ $\mathcal{J}_{3}$ = $\mathcal{J}_{s}$} 
+\end{itemize}
+\end{multicols}
+%\begin{align*}
+%E\textsubscript{wobb}(\mathnormal{I}) = E(\mathnormal{I},n_{w}=1) - [E(\mathnormal{I}-1,n_{w}=0) + E(\mathnormal{I}+1,n_{w}=0)]/2
+%\end{align*}
+\begin{align*}
+\begin{centering}
+\hbar \omega_{w} = \frac{j}{\mathcal{J}_{3}} \left[\left(1+ \frac{J}{j} \left( \frac{\mathcal{J}_{3}}{\mathcal{J}_{1}} -1 \right) \right) \left( 1+ \frac{J}{j} \left( \frac{\mathcal{J}_{3}}{\mathcal{J}_{2}} -1 \right)\right)\right]^{1/2}
+\end{centering}
+\end{align*}
+
+$\implies$ E\textsubscript{wobb} decreases with J.
+\begin{center}
+\Ovalbox{\small{S.Frauendorf and F.D\"{o}nau, Phys. Rev. C 89, 014322 (2014).}}
+\end{center}
+\end{frame}
+
+\begin{frame}{Longitudinal wobbler}
+	\centering 
+\animategraphics[height=3.1in, autoplay]{10}{images/long_wobb-}{0}{119}
+\\\tiny{\textit{Courtesy Dr. J. T. Matta}}  
+\end{frame} 
+
+\begin{frame}{Transverse wobbler}
+	\centering 
+\animategraphics[height=3.1in, autoplay]{10}{images/trans_wobb-}{0}{119} 
+\\\tiny{\textit{Courtesy Dr. J. T. Matta}}
+\end{frame} 
+
+\begin{frame}{Confirmation of Wobbling bands}
+$\Delta\mathrm{I}$ = 1, E2 interband transitions between wobbling band are verified by:
+\begin{itemize}
+\item {\textbf{Angular Distributions}}
+\end{itemize}
+\begin{columns}[c]
+\begin{column}{0.6\textwidth}
+Observation of the intensity distribution of a single $\gamma$-ray transition relative to an orientation axis.
+\begin{align*}
+W(\theta) = A\textsubscript{0}(1 + A\textsubscript{2}P\textsubscript{2}(\cos\theta) + A\textsubscript{4}P\textsubscript{4}(\cos\theta))
+\end{align*}
+Mixing ratio: $\delta$ = $\sqrt{\frac{I_{\gamma}(L')}{I_{\gamma}(L)}}$
+\end{column}
+\begin{column}{0.4\textwidth}
+\begin{figure}
+\includegraphics[height=5cm,width=4.5cm]{ang_dis.png}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Confirmation of Wobbling bands}
+$\Delta\mathrm{I}$ = 1, E2 interband transitions between wobbling band are verified by:
+\begin{itemize}
+\item {\textbf{Directional Correlation of Oriented states (DCO) Ratios }}
+\end{itemize}
+\begin{columns}[c]
+\begin{column}{0.6\textwidth}
+\begin{align*}
+R\textsubscript{DCO} = \frac{I_{\theta_{1}}^{\gamma_{2}}(\text{Gate}_{\theta_{2}}^{\gamma_{1}})}{I_{\theta_{2}}^{\gamma_{2}}(\text{Gate}_{\theta_{1}}^{\gamma_{1}})}
+\end{align*}
+\begin{itemize}
+%\item {DCO-like ratio - more inclusive gates, higher intensity.}
+\item {Calculated for weak transitions to establish their multipolarities.}
+\item {Distinguishes between pure $\Delta\mathrm{I} = 1$ and pure $\Delta\mathrm{I} = 2$.}
+\end{itemize}
+\end{column}
+\begin{column}{0.4\textwidth}
+\begin{figure}
+\includegraphics[height=5cm,width=4.5cm]{ang_dis.png}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\section{Experiment}
+
+\begin{frame}{Experiment}
+\begin{center}
+\textbf{Gammasphere at Argonne National Laboratory, USA}
+\end{center}
+\begin{multicols}{2}
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{../gammasphere.jpg}
+\end{figure}
+\begin{itemize}
+\item{110 Compton suppressed HpGe detectors arranged in spherical geometry.}
+\item{Compton suppression achieved with large BGO scintillators.}
+\item{Honeycomb suppression scheme.}
+\item{Operated in Anti-coincidence mode.}
+\item{Detectors arranged in 17 different angular rings around the beamline.}
+\end{itemize}
+\end{multicols}
+\end{frame}
+
+\begin{frame}{Experiment (cont..)}
+\begin{columns}[c]
+\begin{column}{0.5\textwidth}
+\textbf{\center{Initial Observation}}
+\begin{itemize}
+\item{J.T. Matta et. al. (2015)}
+\item{$^{135}$Pr identified as first case of wobbling in A$\sim$130 region.}
+\item{Reaction Used: $^{123}$Sb($^{16}$O,4n)$^{135}$Pr. \\ E\textsubscript{beam} = 80 MeV}
+\item{Indication of a second wobbling band but insufficient statistics.}
+\end{itemize}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Experiment (cont..)}
+\begin{columns}[c]
+\begin{column}{0.5\textwidth}
+\textbf{\center{Initial Observation}}
+\begin{itemize}
+\item{J.T. Matta et. al. (2015)}
+\item{$^{135}$Pr identified as first case of wobbling in A$\sim$130 region.}
+\item{Reaction Used: $^{123}$Sb($^{16}$O,4n)$^{135}$Pr. \\ E\textsubscript{beam} = 80 MeV}
+\item{Indication of a second wobbling band but insufficient statistics.}
+\end{itemize}
+\end{column}
+\hspace{-30pt}
+\vrule{}
+\begin{column}{0.5\textwidth}
+\textbf{\center{Second experiment}}
+\begin{itemize}
+\item{Performed in October, 2015.}
+\item{Same reaction used.}
+\item{Gammasphere updated to the digital system.}
+\item{Data acquired in triple $\gamma$-coincidences.}
+\item{4 times more data as compared to the previous experiment collected.}
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\section{Data Analysis}
+
+\begin{frame}{Gammasphere Calibration}
+\begin{figure}
+\includegraphics[width=0.73\textwidth]{eu_cal.pdf}
+\end{figure}
+\begin{multicols}{2}
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{../../angdis_plots/Efficiency.pdf}
+\end{figure}
+\begin{small}
+\begin{itemize}
+\item{Data analyzed using \texttt{RADWARE} suite of codes.}
+\item{Energy and efficiency calibration using standard $^{152}$Eu source.}
+\item{Data sorted into $\gamma-\gamma$ matrices and $\gamma-\gamma-\gamma$ cubes.}
+\end{itemize}
+\end{small}
+\end{multicols}
+\end{frame}
+
+\begin{frame}{$^{135}$Pr Level Scheme}
+\centering
+\small{What we know so far.. (\textit{J.T. Matta et. al., PRL 114, 082501 (2015))}}
+\begin{figure}
+\includegraphics[width=0.65\textwidth]{james_level_scheme.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{$^{135}$Pr Level Scheme}
+\centering
+\small{What we know so far.. (\textit{J.T. Matta et. al., PRL 114, 082501 (2015))}}
+\vspace{-10pt}
+\begin{center}
+\begin{tikzpicture}
+\node at (6.5,1.20) {\color{red} \Large ($n_{w} = 1$)};
+\node at (6.5, 0.45) {\color{red} \Large Wobbling};
+\node at (6.5, 0.07) {\color{red} \Large Band};
+\node [anchor=east] (1) at (2.78,1.35) {\Large 1};
+\begin{scope}[xshift=1.5cm]
+    \node[anchor=north, inner sep=0] (image) at (0.08,1.1) {\includegraphics[width=0.65\textwidth]{james_level_scheme.png}};
+ \begin{scope}[x={(image.south)},y={(image.south)}]
+         \draw [-stealth, line width=3pt, red] (1) -- ++(0.4,0.0);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+\end{center}
+\end{frame}
+
+\begin{frame}{$^{135}$Pr Level Scheme}
+\centering
+\small{What we know so far.. (\textit{J.T. Matta et. al., PRL 114, 082501 (2015))}}
+\centering
+\begin{tikzpicture}
+\hspace{-5pt}
+\node at (0.1,3.8) {\color{red} \small $\Delta\mathrm{I} = 2$ sequences};
+\node at (0.1,3.3) {\color{red} \small of alternate};
+\node at (0.1,2.8) {\color{red} \small signatures};
+\node [anchor=north] (2) at (0.1,2.5) {\Large 2};
+\begin{scope}[xshift=1.5cm]
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[width=0.7\textwidth]{james_level_scheme.png}};
+ \begin{scope}[x={(image.south)},y={(image.south)}]
+          \draw [-stealth, line width=3pt, red] (2) -- ++(0.25,0.0);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+\end{frame}
+
+\begin{frame}{$^{135}$Pr Level Scheme}
+\centering
+\small{What we know so far.. (\textit{J.T. Matta et. al., PRL 114, 082501 (2015))}}
+\centering
+\begin{tikzpicture}
+\node [anchor=south] (3) at (2.8,5.5) {\Large 3};
+%\vspace{1pt}
+\node at (3.2,5.0) {\color{red} Strong $\Delta\mathrm{I} = 1$};
+\node at (3.2,4.5) {\color{red} M1 transitions};
+\begin{scope}[xshift=1.5cm]
+    \node[anchor=south east,inner sep=0] (image) at (0,0) {\includegraphics[width=0.7\textwidth]{james_level_scheme.png}};
+ \begin{scope}[x={(image.south)},y={(image.south)}]
+          \draw [-stealth, line width=3pt, red] (3) -- ++(0.35,0.0);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+\end{frame}
+
+
+\begin{frame}{$^{135}$Pr Level Scheme (extended)}
+\begin{figure}
+\includegraphics[width=0.65\textwidth]{yrast1.png}
+\end{figure}
+\end{frame}
+
+
+%\begin{frame}{$^{135}$Pr Level Scheme (extended)}
+%\centering
+%\begin{tikzpicture}
+%\node [anchor=north] (3) at (2.8,6.8) {\color{red} \Large 1};
+%\begin{scope}[xshift=1.5cm]
+%    \node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[width=0.6\textwidth]{135Pr_yrast.pdf}};
+% \begin{scope}[x={(image.south)},y={(image.south)}]
+%          \draw [-stealth, line width=3pt, cyan] (3) -- ++(0.3,0.0);
+%    \end{scope}
+%\end{scope}
+%\end{tikzpicture}%
+%\end{frame}
+
+
+\begin{frame}{$^{135}$Pr Level Scheme (extended)}
+\vspace{-10pt}
+\centering
+\begin{tikzpicture}
+\node [anchor=north] (3) at (1.0,2.8) {\color{red} \Large 2};
+\begin{scope}[xshift=1.5cm]
+   \node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[width=0.8\textwidth]{sig.pdf}};
+ \begin{scope}[x={(image.south)},y={(image.south)}]
+          \draw [-stealth, line width=3pt, cyan] (3) -- ++(0.3,0.0);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+\end{frame}
+
+
+
+\begin{frame}{$^{135}$Pr Level Scheme (extended)}
+\vspace{-10pt}
+\centering
+\begin{tikzpicture}
+\node [anchor=east] (2) at (4.80,0.6) {\color{red} \Large 3};
+\begin{scope}[xshift=1.5cm]
+    \node[anchor=north, inner sep=0] (image) at (0.08,1.1) {\includegraphics[width=0.85\textwidth]{dip2.pdf}};
+ \begin{scope}[x={(image.south east)},y={(image.south east)}]
+         \draw [-stealth, line width=3pt, cyan] (2) -- ++(0.1,0.0);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+\end{frame}
+
+
+
+\begin{frame}{$^{135}$Pr Level Scheme (extended)}
+\vspace{-15pt}
+\begin{center}
+\begin{tikzpicture}
+\node at (6.50,0.85) {\color{red} \Large ($n_{w} = 2$)};
+\node at (6.50,0.35) {\color{red} \Large Wobbling};
+\node at (6.50,0.01) {\color{red} \Large Band};
+\node [anchor=east] (1) at (5.00,0.01) {\color{red} \Large 4};
+\begin{scope}[xshift=1.0cm]
+    \node[anchor=north, inner sep=0] (image) at (0.05,1.3) {\includegraphics[width=10cm, height = 8.5cm]{2wobb.pdf}};
+ \begin{scope}[x={(image.south)},y={(image.south)}]
+         \draw [-stealth, line width=3pt, cyan] (1) -- ++(0.2,0.0);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+\end{center}
+\end{frame}
+
+
+\begin{frame}{$^{135}$Pr Level Scheme (all together)}
+\centering
+\vspace{-20pt}
+\begin{figure}
+\includegraphics[width=11cm, height=8cm]{135Pr_v.pdf}
+\end{figure}
+\end{frame}
+
+
+
+\section{Preliminary Results}
+
+\begin{frame}{Results (E\textsubscript{wobb} vs. Spin)}
+\centering
+\begin{align*}
+E\textsubscript{wobb}(\mathnormal{I}) = E(\mathnormal{I},n_{w}=1) - [E(\mathnormal{I}-1,n_{w}=0) + E(\mathnormal{I}+1,n_{w}=0)]/2
+\end{align*}
+\begin{figure}
+\includegraphics[width=0.6\textwidth]{../article/Ewobb.png}
+\end{figure}
+\textbf{\textit{Confirms Transverse Wobbling in $^{135}$Pr!}}
+\end{frame}
+
+\begin{frame}{Angular distributions (1/3)}
+\centering
+\textbf{n$_{w}$ = 1 $\rightarrow$ Yrast linking transitions}
+\begin{columns}[c]
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\includegraphics[width=0.9\textwidth]{../747.pdf}
+\\\includegraphics[width=0.9\textwidth]{../813.pdf}
+\end{figure}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\includegraphics[width=0.8\textwidth]{../754.pdf}
+\\\includegraphics[width=0.4\textwidth]{connecting1.png}
+\end{figure}
+%\textbf{All n$_{w+1} \rightarrow$ n$_{w}$ linking transitions are $\Delta\mathrm{I}$ = 1,E2.}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Angular distributions (2/3)}
+\centering
+\textbf{n$_{w}$ = 2 $\rightarrow$ n$_{w}$ = 1 linking transitions}
+\begin{columns}[c]
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\includegraphics[width=0.9\textwidth]{../450.pdf}\\
+\includegraphics[width=0.9\textwidth]{../550.pdf}
+\end{figure}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\includegraphics[width=0.9\textwidth]{../517.pdf}\\
+\includegraphics[width=0.6\textwidth]{connecting2.png}
+\end{figure}
+%\textbf{All n$_{w+1} \rightarrow$ n$_{w}$ linking transitions are $\Delta\mathrm{I}$ = 1,E2.}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Angular distributions (3/3)}
+\centering
+\textbf{Signature Partner $\rightarrow$ Yrast linking transitions}
+\begin{columns}[c]
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\includegraphics[width=1.2\textwidth]{../594.pdf}
+\end{figure}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\item {Exhibited a predominant \textbf{dipole} character.}
+\item {Differentiating factor between proposed wobbling bands and the signature partner. }
+\item {Higher linking transitions too weak to extract angular distributions.}
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{DCO-like ratios}
+\vspace{-16pt}
+\begin{figure}
+\includegraphics[width=1.05\textwidth]{../../angdis_plots/dco.pdf}
+\end{figure}
+\end{frame}
+
+
+\section{Conclusion and Future Work}
+
+\begin{frame}{Conclusion and Future Work (1/3)}
+\begin{itemize}
+\item {Transverse wobbling has been investigated in the A$\sim$130 region.}
+\item {The proposed two-phonon wobbling band has been identified.} 
+\item {$\Delta\mathrm{I}$ = 1, E2 interband transitions between wobbling band verified by:}
+\begin{itemize}
+\item {Angular Distributions}
+\item {DCO-like ratios}
+\end{itemize}
+\item {This is only the third such case after $^{163,165}$Lu.}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Conclusion and Future Work (2/3)}
+\begin{itemize}
+\item {QTR model calculations to support the experimental findings need to be done.}
+\item {Once confirmed, it would firmly establish wobbling in A$\sim$130 region.} 
+\item {Possibility of the two dipole bands to be chiral partners of each other being explored.}
+%\item {This would be the first ever case of a triaxial nucleus to exhibit both chirality and wobbling.}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Conclusion and Future Work (3/3)}
+\centering
+\begin{tikzpicture}
+\node [anchor=east] (2) at (7.00,0.4) {\color{red} \Large Chiral partners??};
+\begin{scope}[xshift=1.5cm]
+    \node[anchor=north, inner sep=0] (image) at (0.08,1.1) {\includegraphics[width=0.8\textwidth]{135Pr_v2.pdf}};
+\node [anchor=south east] (3) at (1.80,0.1) {\Large };
+ \begin{scope}[x={(image.south west)},y={(image.south)}]
+         \draw [-stealth, line width=2pt, cyan] (3) -- ++(0.13,0.0);
+    \end{scope}
+\node [anchor=south west] (3) at (1.80,0.1) {\Large };
+ \begin{scope}[x={(image.south east)},y={(image.south)}]
+         \draw [-stealth, line width=2pt, cyan] (3) -- ++(0.13,0.0);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}
+\end{frame}
+
+
+\begin{frame}{Conclusion and Future Work (3/3)}
+\textbf{Possible chirality of the two dipole bands\\}
+\begin{columns}[c]
+\begin{column}{0.5\textwidth}
+\\\textit{\color{red} Remember?}\\
+Standard fingerprints for chiral bands:
+\begin{itemize}
+\item{Close excitation energies}
+\item{Constant Staggering parameter}
+\item{Identical B(M1)/B(E2) ratios}
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\includegraphics[width=0.8\textwidth]{../../angdis_plots/dipoles/energy.pdf}\\
+\includegraphics[width=0.8\textwidth]{../../angdis_plots/dipoles/stag.pdf}
+\end{figure}
+
+%\begin{figure}
+%\includegraphics[width=0.5\textwidth]{../../angdis_plots/dipoles/be2.pdf}
+%\end{figure}
+
+\end{column}
+\end{columns}
+\textit{This would be the first ever case of a nucleus to exhibit both fingerprints of triaxiality - chirality and wobbling!}
+\end{frame}
+
+
+\begin{frame}
+\begin{figure}
+\includegraphics[width=0.6\textwidth,center]{ques.png}\\~\\
+\includegraphics[width=0.3\textwidth,right]{ques2.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\centering
+BACKUP
+\end{frame}
+
+\begin{frame}
+\centering
+\begin{figure}
+\includegraphics[width=0.8\textwidth]{zoomed_conn.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Signature Partner Band}
+\begin{itemize}
+\item {
+If rotation is about a principal axis of the nucleus - mean field invariant w.r.t $\mathcal{R}_{z}(\pi)$ 
+\begin{align*}
+\mathcal{R}_{z}(\pi)\ket{} = \exp^{-i\alpha\pi}\ket{}
+\end{align*}
+
+where $\alpha$ is the signature quantum number and leads to a selection rule for $\mathrm{I}$:
+
+\begin{align*}
+I = \alpha + 2n; n = 0, \pm 1, \pm 2, ....
+\end{align*} 
+}
+\item {For odd-A nuclei, $\alpha$ takes values $\pm 1/2$. }
+\item {A principal axis rotation leads to sequences of $\Delta\mathrm{I} = 2$ bands having alternate signatures.} 
+%\item {The present work identifies transitions to differentiate between the signature partner and the wobbling bands.}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Magnetic Rotation}
+\begin{columns}[c]
+\begin{column}{0.6\textwidth}
+\begin{itemize}
+\item {A sequence of strong $\Delta\mathrm{I}$ =1, M1 transitions.}
+\item {j\textsubscript{p} and j\textsubscript{n} get lined up separately.}
+\item {This gives rise to a large transverse magnetic dipole moment $\mu_{\perp}$ that rotates and gives rise to magnetic radiation.}
+\item {\textbf{$\mathcal{R}_{z}(\psi)$ symmetry is broken - A rotational band is a consequence!}}
+\end{itemize}
+\Ovalbox{\tiny{S. Frauendorf, Reviews of Modern Physics, Volume 73 (2001)}}
+\end{column}
+\begin{column}{0.4\textwidth}
+\begin{figure}
+\includegraphics[width=\textwidth]{dipole.png}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Polarization Measurements}
+\begin{columns}[c]
+\begin{column}{0.7\textwidth}
+\begin{itemize}
+\item {Distinguishes between the electric and magnetic nature of $\gamma$-rays.}
+\item {Investigated from the observed asymmetry of the Compton scattering of $\gamma$-rays.}
+\item {Clover detectors used to measure polarization.}
+\end{itemize}
+\end{column}
+\begin{column}{0.3\textwidth}
+\begin{figure}
+\includegraphics[width=1.2\textwidth]{polarization.png}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Polarization Measurements - Previous Results}
+Performed at the Indian National Gamma Array (INGA) using Clover detectors.
+\begin{figure}
+\includegraphics[width=0.85\textwidth]{pol_asymmetry.png}
+\end{figure}
+\end{frame}	
+
+
+\end{document}
+
+

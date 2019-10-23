@@ -1,0 +1,356 @@
+\documentclass [aspectratio=169]{beamer}
+\usepackage{graphics}
+\mode<presentation>
+{
+  \usetheme{metropolis}
+  %\usecolortheme{dove}
+%  \setbeamercovered{transparent}
+}
+\usepackage[autoplay,loop]{animate}
+%\usepackage[orientation=landscape, size =a0, scale=2.0]{beamerposter}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{tikz}
+\usepackage[english]{babel}
+\usepackage{fancybox}
+\usepackage{braket}
+\usepackage[utf8]{inputenc}
+\usepackage{rotating}
+\usepackage{enumerate}
+\usepackage{blindtext}
+\newcommand{\iu}{{i\mkern1mu}}
+%\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage[labelformat=empty]{caption}
+\usepackage[export]{adjustbox}
+\usepackage{color}
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+
+\titlegraphic{\includegraphics[width=3cm]{ND_logo}\hspace*{8cm}~%
+   \includegraphics[width=3cm]{isnap_logo}
+}
+
+\title{Wobbling motion in A$\sim$190 region}
+
+\author{Nirupama Sensharma \\ 
+Fifth Joint Meeting of the DNP of the APS and the JPS}
+\date{October 24, 2018}
+\institute{University of Notre Dame}
+
+
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Nuclear Shapes}
+\centering
+\Ovalbox{Prolate} \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \Ovalbox{Spherical} \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \space \Ovalbox{Oblate}
+\begin{figure}
+\includegraphics[width=0.83\textwidth]{shapes.png}
+\end{figure}
+\begin{multicols}{2}
+\begin{figure}
+\hspace{50pt}
+\includegraphics[width=0.18\textwidth]{triaxial_nucleus}
+\end{figure}
+\vspace{-14pt}
+\hspace{50pt}
+\Ovalbox{Triaxial Nucleus}
+\begin{figure}
+\hspace{-30pt}
+\includegraphics[width=0.19\textwidth]{ellipsoid.jpg}
+\end{figure}
+\end{multicols}
+\end{frame}
+
+\begin{frame}{Triaxial Region}
+\centering
+Triaxiality - A rare phenomenon!\\
+\scriptsize{\color{violet}P. M\"{o}ller et. al. PRL 97, 162502 (2006)}
+\begin{figure}
+\includegraphics[width=0.6\textwidth]{triaxial.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Wobbling - Unique fingerprint of Triaxiality}
+\vspace{-10pt}
+\begin{center}
+\begin{figure}
+\includegraphics[width=0.18\textwidth]{wobb.png}
+\hspace{50pt}
+\includegraphics[width=0.28\textwidth]{wobb.pdf}
+\end{figure}
+\end{center}
+\vspace{-10pt}
+\begin{itemize}
+\item {\small{Analog of the spinning motion of an asymmetric top.}}
+\item {\small{Oscillation of a principal axis about the space fixed \textbf{$\vec{J}$}.}}
+\end{itemize}
+\vspace{-4pt}
+\textbf{Standard fingerprints for Wobbling bands:}
+\begin{itemize}
+\item{\small{Rotational bands corresponding to n$_{w}$ = 0, 1, 2, ....}}
+\item{\small{Transitions from n$_{w+1} \rightarrow$ n$_{w}$ ($\Delta$n$_{w}$ = +1)}}
+\item{\small{Interband Transitions are $\Delta\mathrm{I}$ = 1, E2}}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Wobbling in odd-A nuclei - Types of Wobbling(1/2)}
+\begin{multicols}{2}
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.25\textwidth]{long_wobb.png}
+\hspace{8pt}
+\animategraphics[height=1.3in, autoplay]{10}{animation/long_wobb-}{0}{119}
+\end{center}
+\end{figure}
+\begin{itemize}
+\item{Odd-particle aligned with axis with max. MOI (m-axis).}
+\item{$\mathcal{J}_{3} > \mathcal{J}_{2}$ and $\mathcal{J}_{3} > \mathcal{J}_{1}$}
+\item{Longitudinal wobbling: \\ $\mathcal{J}_{3}$ = $\mathcal{J}_{m}$}
+\end{itemize}
+\end{multicols}
+\begin{center}
+\begin{align*}
+\text{Wobbling energy, } \hbar \omega_{w} = \frac{j}{\mathcal{J}_{3}} \left[\left(1+ \frac{J}{j} \left( \frac{\mathcal{J}_{3}}{\mathcal{J}_{1}} -1 \right) \right) \left( 1+ \frac{J}{j} \left( \frac{\mathcal{J}_{3}}{\mathcal{J}_{2}} -1 \right)\right)\right]^{1/2}
+\end{align*}
+\end{center}
+$\implies$ E\textsubscript{wobb} increases with J.
+\begin{center}
+\Ovalbox{\scriptsize{\color{violet}S.Frauendorf and F.D\"{o}nau, Phys. Rev. C 89, 014322 (2014)}}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Wobbling in odd-A nuclei - Types of Wobbling(2/2)}
+\begin{multicols}{2}
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.25\textwidth]{trans_wobb.png}
+\hspace{8pt}
+\animategraphics[height=1.21in, autoplay]{10}{animation/trans_wobb-}{0}{119} 
+\end{center}
+\end{figure}
+\begin{itemize}
+\item{Odd-particle aligned perpendicular to axis with max. MOI (s- or l-axis).}
+\item{$\mathcal{J}_{3} < \mathcal{J}_{2}$ and $\mathcal{J}_{3} > \mathcal{J}_{1}$}
+\item{Transverse wobbling: \\ $\mathcal{J}_{3}$ = $\mathcal{J}_{s}$} 
+\end{itemize}
+\end{multicols}
+\begin{align*}
+\begin{centering}
+\text{Wobbling energy, } \hbar \omega_{w} = \frac{j}{\mathcal{J}_{3}} \left[\left(1+ \frac{J}{j} \left( \frac{\mathcal{J}_{3}}{\mathcal{J}_{1}} -1 \right) \right) \left( 1+ \frac{J}{j} \left( \frac{\mathcal{J}_{3}}{\mathcal{J}_{2}} -1 \right)\right)\right]^{1/2}
+\end{centering}
+\end{align*}
+
+$\implies$ E\textsubscript{wobb} decreases with J.
+\begin{center}
+\Ovalbox{\scriptsize{\color{violet}S.Frauendorf and F.D\"{o}nau, Phys. Rev. C 89, 014322 (2014)}}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{More on wobbling...}
+\begin{multicols}{2}
+\begin{itemize}
+\item{$^{163}$Lu - first observation of wobbling in 2001.}
+\item{For long, wobbling known in only 5 nuclei:  $^{161}$Lu, $^{163}$Lu, $^{165}$Lu, $^{167}$Lu and $^{167}$Ta.  \\
+\textit{\scriptsize{\color{violet}Eur. Phys. J. A 24 (2005), PRL 86(2001), PLB 552 (2003), PLB 553 (2003), PRC 80 (2009)}}}
+\item{All in A$\sim$160 region.}
+
+\end{itemize}
+
+\begin{itemize}
+\item{Breakthrough observation in 2015 - Wobbling found in $^{135}$Pr. \\
+\textit{\scriptsize{\color{violet}J. T. Matta et. al., PRL 114 (2015)}}}
+\item{Followed by reporting of wobbling bands in $^{133}$La. \\
+\textit{\scriptsize{\color{violet}S. Biswas, et al., arxiv: nucl-ex 1608 (2016) 07840v1.}}}
+\end{itemize}
+\end{multicols}
+\textbf{\textit{Are there other regions of nuclear chart where wobbling bands may be observed?}}
+\end{frame}
+
+
+\begin{frame}{Exploring in A$\sim$190 region}
+\begin{itemize}
+\item{Significant triaxiality suggested for nuclei at low spins in this mass region. \\
+\scriptsize{\color{violet}(T. Nikšic, et. al. Part. Nucl. Phys. 66 (2011))}}
+\item{Clear evidence for triaxiality provided by observation of chiral band pairs in $^{188}$Ir, $^{194}$Tl and $^{198}$Tl.}
+\item{Our choice - $^{187}$Au}
+\begin{itemize}
+\item{The nucleus $^{186}$Pt known to exhibit triaxial behavior.}
+\item{Wobbling observed so far only in odd-Z nuclei.}
+\item{The $\pi$h$_{9/2}$ orbital expected to lead to stabilization of triaxial shapes in this region.}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Experiment}
+\begin{multicols}{2}
+\begin{itemize}
+\item{Experiment performed using Gammasphere array at the Argonne National Laboratory.}
+\item{Reaction: $^{174}$Yb($^{19}$F,6n)$^{187}$Au at 115 MeV.}
+\item{73 Compton suppressed Ge detectors used.}
+\item{No. of three and higher-fold $\gamma$-ray coincidence events collected - 6$\times$10$^{10}$.}
+\end{itemize}
+\begin{figure}
+\includegraphics[width=0.4\textwidth]{gammasphere.jpg}
+\end{figure}
+\end{multicols}
+\end{frame}
+
+
+\begin{frame}{Partial Level Scheme of $^{187}$Au}
+\begin{figure}
+\includegraphics[width=\textwidth]{187Au}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Angular Distributions (1/4)}
+\begin{center}
+\begin{multicols}{2}
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{376.pdf}
+\end{figure}
+\textbf{$\delta$ = -2.62$^{+0.09}_{-0.11}$ \\~\\
+E2\% = 87.28$^{+0.93}_{-0.76}$} \\
+\Ovalbox{\textbf{E$_{\gamma}$ = 375.9 keV}}
+\begin{figure}
+\includegraphics[width=0.32\textwidth]{one.pdf}
+\end{figure}
+\end{multicols}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Angular Distributions (2/4)}
+\begin{center}
+\begin{multicols}{2}
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{462.pdf}
+\end{figure}
+\textbf{$\delta$ = -2.97$^{+0.04}_{-0.04}$ \\~\\
+E2\% = 89.82$^{+0.25}_{-0.25}$} \\
+\Ovalbox{\textbf{E$_{\gamma}$ = 461.7 keV}}
+\begin{figure}
+\includegraphics[width=0.32\textwidth]{two.pdf}
+\end{figure}
+\end{multicols}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Angular Distributions (3/4)}
+\begin{center}
+\begin{multicols}{2}
+\begin{figure}
+\includegraphics[width=0.52\textwidth]{544.pdf}
+\end{figure}
+\textbf{$\delta$ = -3.45$^{+0.05}_{-0.06}$ \\~\\
+E2\% = 92.25$^{+0.25}_{-0.21}$} \\
+\Ovalbox{\textbf{E$_{\gamma}$ = 543.7 keV}}
+\begin{figure}
+\includegraphics[width=0.32\textwidth]{three.pdf}
+\end{figure}
+\end{multicols}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Angular Distributions (4/4)}
+\begin{center}
+\begin{multicols}{2}
+\begin{figure}
+\includegraphics[width=0.52\textwidth]{638.pdf}
+\end{figure}
+\textbf{$\delta$ = -3.82$^{+0.17}_{-0.19}$ \\~\\
+E2\% = 93.59$^{+0.60}_{-0.53}$} \\
+\Ovalbox{\textbf{E$_{\gamma}$ = 637.6 keV}}
+\begin{figure}
+\includegraphics[width=0.32\textwidth]{four.pdf}
+\end{figure}
+\end{multicols}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Wobbling Energy (1/3)}
+Wobbling energy (E\textsubscript{wobb})- energy associated with wobbling excitations.
+\begin{multicols}{2}
+\begin{figure}
+\includegraphics[width=0.35\textwidth]{prev_wobb.png}
+\end{figure}
+\begin{center}
+\begin{figure}
+\includegraphics[width=0.3\textwidth]{wobb_Pr.pdf}
+\end{figure}
+\textbf{Transverse Wobbling}\\
+\textit{Odd particle aligns $\perp$ to axis with maximum M.O.I}\\~\\
+\scriptsize{\color{violet}S. Frauendorf, F. D{\"o}nau, Phys. Rev. C 89 (2014)}
+\end{center}
+\end{multicols}
+\end{frame}
+
+
+\begin{frame}{Wobbling Energy (2/3)}
+Wobbling energy (E\textsubscript{wobb})- energy associated with wobbling excitations.
+\begin{center}
+\begin{figure}
+\includegraphics[width=0.4\textwidth]{wobb_La.pdf}
+\end{figure}
+\textbf{First case of Longitudinal Wobbling}\\
+\textit{Odd particle aligns parallel to axis with maximum M.O.I}\\~\\
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Wobbling Energy (3/3)}
+Wobbling energy (E\textsubscript{wobb})- energy associated with wobbling excitations.
+\begin{center}
+\begin{figure}
+\includegraphics[width=\textwidth]{wobb_ene_La_Au.pdf}
+\end{figure}
+\textbf{$^{187}$Au - Only the second case of Longitudinal Wobbling!}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Conclusion and Future Work}
+\begin{itemize}
+\item{Wobbling motion has been investigated in the A$\sim$190 region.}
+\item{$^{187}$Au - clear observation of wobbling bands.}
+\item{$^{187}$Au - only the second case of \textit{Longitudinal wobbling}.}
+\item{Calculations in the framework of the Particle Rotor Model (PRM) being done to affirm experimental observations.}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Acknowledgements}
+\begin{multicols}{2}
+\begin{itemize}
+\item{University of Notre Dame \\
+\textit{\scriptsize{\color{violet}U. Garg, S. Frauendorf, D. P. Burdette, J. L. Cozzi, K. B. Howard}}}
+\item{Argonne National Laboratory \\
+\textit{\scriptsize{\color{violet}S. Zhu, M. P. Carpenter, F. G. Kondev, T. Lauritsen, D. Seweryniak}}}
+\item{United States Naval Academy \\
+\textit{\scriptsize{\color{violet}A. D. Ayangeakaa, D. J. Hartley}}}
+\item{University of North Carolina \\
+\textit{\scriptsize{\color{violet}R. V. F. Janssens}}}
+\item{U.S. National Science Foundation \textit{\scriptsize{\color{violet}[PHY-1713857 (UND), PHY-1559848 (UND), and PHY-1203100 (USNA)]}}}
+\item{U. S. Department of Energy, Office of Science, Office of Nuclear Physics \textit{\scriptsize{\color{violet}[DE-AC02-06CH11357 (ANL) and DE-FG02-95ER40934 (UND)]}}}
+\item{Animations Courtesy - \textit{\scriptsize{\color{violet}Dr. J. T. Matta}}}
+\end{itemize}
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{logo.pdf}
+\end{figure}
+\end{multicols}
+\end{frame}
+
+
+\end{document}
